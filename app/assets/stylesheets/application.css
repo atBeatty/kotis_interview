@@ -21,15 +21,28 @@
      background-image: url('hero-image.png');
      background-size: contain;
      background-repeat: no-repeat;
-     display: flex;
      margin-right: auto;
      margin-left: auto;
      width: 80vw;
      height: 80vh;
  }
- .nav a {
-     margin-right: 20px;
+ nav {
+     display: flex;
+     margin-right: auto;
+     margin-left: auto;
+     width: 80vw;
+ }
+ nav a {
+     margin-right: 40px;
  }
  nav a:nth-last-child(2) {
   align-self: flex-end;
+}
+a {
+    text-decoration: none;
+    color: black;
+
+}
+.logo {
+   
 }
