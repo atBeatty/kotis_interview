@@ -35,7 +35,7 @@
      height: 50vh;
      color:white;
  }
- input[type=text] {
+ .order-form input {
     border: 1px solid gray;
     width:30px;
  }
