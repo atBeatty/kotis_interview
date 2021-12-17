@@ -24,15 +24,32 @@
     font-family: 'Hind', sans-serif;
 }
  .container {
+     padding-left: 20px;
+     padding-top: 20px;
      background-image: url('hero-image.png');
      background-size: contain;
      background-repeat: no-repeat;
      margin-right: auto;
      margin-left: auto;
-     width: 80vw;
-     height: 80vh;
+     width: 90vw;
+     height: 90vw;
+     color:white;
  }
+ .container h2 {
+     font-size: 3rem;
+     line-height: 1rem;
+ }
+ .container h3 {
+     font-weight: 300;
+
+     line-height: 18px;
+     width:30vw;
+ }
+
  nav  {
+     height: 15vh;
+     justify-content: space-between;
+     margin-top: 20px;
      display: flex;
      margin-right: auto;
      margin-left: auto;
@@ -42,10 +59,11 @@
      display: flex;
  }
  nav a {
-     margin-right: 40px;
+     font-weight: 300;
+     margin-right: 15px;
  }
- nav a:nth-last-child(2) {
-  align-self: flex-end;
+ nav section:nth-child(2) {
+    justify-content: flex-end;
 }
 a {
     text-decoration: none;
