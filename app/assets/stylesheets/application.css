@@ -37,7 +37,7 @@
  }
  input[type=text] {
     border: 1px solid gray;
-    width:auto;
+    width:30px;
  }
  h4.welcome {
       margin-left:auto;
