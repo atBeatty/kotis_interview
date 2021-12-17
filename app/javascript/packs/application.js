@@ -32,10 +32,12 @@ function handleClick(event) {
 
 
     // Get Parents Array of TD cells
-    const allSizes = event.target.parentElement.parentElement.querySelectorAll('td input')
+    const allSizes = event.target.parentElement.parentElement.querySelectorAll('td input.size')
     allSizes.forEach(input => allQuantities.push(input.value))
     const total = allQuantities.reduce((cv, pv) => parseInt(cv) + parseInt(pv))
     console.log(allQuantities, total)
+
+    document.querySelector('input.total').value = total
 
 
 
