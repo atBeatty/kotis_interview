@@ -6,7 +6,9 @@ class WelcomeController < ApplicationController
       format.any { render :index, layout: 'welcome_index' }
     end
   end
-
+  def one
+  end
+  
   def task_one
   end
 
