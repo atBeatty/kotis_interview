@@ -1,0 +1,83 @@
+<article>
+  <h1>Task Two - Javascript/HTML</h1>
+  <section>
+    There are two parts to this section.  Please complete them in order and get through as much as you can.
+  </section>
+  <hr>
+  <section>
+    <h1>Part One:</h1>
+    <p>
+      Build out the following table and form fields using HTML - it does NOT need to be styled and the products do not need to be linked:
+      <br />
+      <%= image_tag "task_two/javascript-table" %>
+      <br />
+      (Replace the image above with the form and table.)
+    </p>
+    <p>
+    After you've built the form, add Javascript that performs the following:
+    <ul>
+      <li>When tabbing or clicking out of the form fields, the total for the individual row updates with the sum of all the boxes in the row. (YELLOW highlight)</li>
+      <li>When tabbing or clicking out of the form fields, the overall total is updated with the sum of all the rows (GREEN highlight).</li>
+      <li>Visually cue the user when invalid input (negative numbers) are added (RED arrow).</li>
+      <li>Ensure only numbers can be added to the form fields.  Blank entries are allowed and should be treated as zero.</li>
+    </ul>
+  </section>
+  <hr>
+  <section>
+    <h1>Part Two:</h2>
+    <p>
+    Add Javascript to handle events in the following page section (shaded with a gray background).
+    <br />
+    <br />
+    You can and will need to edit the HTML:
+    </p>
+
+    <div id="proof-information" style="background-color:#eee;padding:8px 16px 8px 16px">
+      <div class="mykotis-section">
+        <h3>Proof Info</h3>
+        <div class="mykotis-section-content">
+            <div class="job-proof-info-container">
+                <div class="small-proof-image">
+                  <%= image_tag "task_two/small-proof" %>
+                </div>
+            </div>
+            <div class="job-proof-info-container">
+              <p>Your proof was posted on 12/14/2021.</p>
+                <a class="pure-button secondary-button" href="#">View Proof</a>
+            </div>
+        </div>
+      </div>
+      <div class="address-spacing-addition">
+        <form name="submit-job-form">
+          <hr>
+          <div class="black">
+            <p><strong>Your order cannot be submitted until artwork is approved.</strong></p>
+          </div>
+
+          <div id="digital-signature-container">
+            <label for="digital-signature">Digital Signature</label>
+            <input type="text" name="digital-signature" id="digital-signature" value="">
+
+            <input type="submit" name="commit" value="Submit Your Order" id="submit-job-button" disabled="disabled" data-disable-with="Submit Your Order">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <h4>Events to handle:</h4>
+    <ul>
+      <li>The form ("Submit Your Order") should not be able to submit unless there's a signature AND "View Proof" has been clicked.</li>
+      <li>The "Digital Signature" box should not be enabled until "View Proof" is clicked.</li>
+      <li>If the "Digital Signature" box gets cleared, the "Submit Your Order" button should be disabled.</li>
+      <li>When the form is submitted, we should not take the user anywhere, but should show an alert indicating the form submit was successful.</li>
+      <li>The "View Proof" link should not take the user anywhere.</li>
+      <li>If the page is refreshed, the user should have to click "View Proof" again.</li>
+    </ul>
+  </section>
+  <hr>
+  <section>
+    <h1>Congratulations!</h1>
+    <p>You should be finished.  Double check your work and make sure to commit it all.</p>
+    <%= link_to "Back to Home", root_path %>
+  </section>
+</article>
