@@ -35,10 +35,13 @@ function handleClick(event) {
     const allSizes = event.target.parentElement.parentElement.querySelectorAll('td input.size')
     allSizes.forEach(input => allQuantities.push(input.value))
     const total = allQuantities.reduce((cv, pv) => parseInt(cv) + parseInt(pv))
-    console.log(allQuantities, total)
 
     event.target.parentElement.parentElement.querySelector('.total').value = total
 
+    const grandTotal = document.querySelector('tr.grand-total')
+    const totalsFromColumn = []
+    document.querySelectorAll('input.total').forEach(input => totalsFromColumn.push(input.value))
 
-
+    grandTotal.innerHTML = totalsFromColumn.reduce((pv, cv) => parseInt(pv) + parseInt(cv))
+    console.log(grandTotal.innerHTML)
 }
