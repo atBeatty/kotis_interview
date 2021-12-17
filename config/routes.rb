@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root "welcome#index"
 get "/one", to: "welcome#one", as: "one"
+get "/two", to: "welcome#two", as: "two"
   get "/task_one", to: "welcome#task_one", as: "task_one"
   get "/task_two", to: "welcome#task_two", as: "task_two"
 
