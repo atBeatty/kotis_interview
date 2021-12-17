@@ -15,6 +15,12 @@
  */
 
 * {
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
     font-family: 'Hind', sans-serif;
 }
  .container {
@@ -26,11 +32,14 @@
      width: 80vw;
      height: 80vh;
  }
- nav {
+ nav  {
      display: flex;
      margin-right: auto;
      margin-left: auto;
      width: 80vw;
+ }
+ nav section {
+     display: flex;
  }
  nav a {
      margin-right: 40px;
@@ -43,6 +52,7 @@ a {
     color: black;
 
 }
-.logo {
-   
+.btn {
+    background-color: orange;
 }
+
