@@ -16,11 +16,7 @@ ActiveStorage.start()
 console.log("hi")
 window.onload = function () {
     document.querySelectorAll('input').forEach(input => { input.addEventListener('change', handleClick) })
-    // document.querySelectorAll('input').forEach(input => { input.addEventListener('click', handleClick) })
 
-    // document.querySelectorAll('input.total').forEach(input => { input.addEventListener('change', handleNegative) })
-
-    console.log()
 };
 
 
