@@ -70,15 +70,21 @@
      font-weight: 300;
      margin-right: 15px;
  }
- nav section:nth-child(2) {
-    justify-content: flex-end;
+nav a:hover {
+    color: orangered;
 }
+
 a {
     text-decoration: none;
     color: black;
 
 }
+.black.btn {
+    background-color: black;
+}
 .btn {
-    background-color: orange;
+    color: white;
+    padding: 10px;
+    background-color: orangered;
 }
 
