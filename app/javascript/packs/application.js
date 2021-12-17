@@ -14,3 +14,14 @@ ActiveStorage.start()
 
 
 console.log("hi")
+window.onload = function () {
+    document.querySelectorAll('input').forEach(input => { input.addEventListener('change', handleNegative) })
+
+    console.log()
+};
+
+function handleNegative(event) {
+    console.log(event.target.value < 1)
+    event.target.value < 0 ? event.target.style.backgroundColor = "red" : ""
+
+}
