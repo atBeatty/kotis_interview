@@ -37,7 +37,7 @@ function handleClick(event) {
     const total = allQuantities.reduce((cv, pv) => parseInt(cv) + parseInt(pv))
     console.log(allQuantities, total)
 
-    document.querySelector('input.total').value = total
+    event.target.parentElement.parentElement.querySelector('.total').value = total
 
 
 
